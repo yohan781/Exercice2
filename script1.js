@@ -40,3 +40,10 @@
         </script>
     </head>
     <body>
+
+<input type="button" value="R&eacute;cup&eacute;rer le cookie" onclick="alert(gcookie('cookies_test_1'));" /><br />
+    <input type="text" id="new_val" /> <input type="button" value="Changer/cr&eacute;er le cookie" onclick="scookie('cookies_test_1',document.getElementById('new_val').value, 5);" /><br />
+    <input type="button" value="Supprimer le cookie" onclick="scookie('cookies_test_1','', -1);" /><br />
+    M&ecirc;me si vous rafraichissez la page ou que vous fermer votre navigateur, le cookie restera enregistr&eacute;e jusqu'&agrave; ce que vous le supprimiez ou jusqu'&agrave; ce qu'il expire.
+    </body>
+</html>
